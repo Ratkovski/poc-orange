@@ -10,7 +10,7 @@ import java.io.Serializable;
 @Setter
 @Getter
 @ToString
-public class Viacep implements Serializable {
+public class Viacep {
 
 //    {
 //        "cep": "01001-000",
