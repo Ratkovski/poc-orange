@@ -16,8 +16,13 @@ public class ConsultaCepController {
 
     @PostMapping
     public ResponseEntity<Void> consuta(@RequestBody CepDto cepDto){
-        viacepService.consultaEPublicar(cepDto.getCep());
-        return ResponseEntity.ok().build();
+        try{
+            viacepService.consultaEPublicar(cepDto.getCep());
+            return ResponseEntity.ok().build();
+        }catch (RuntimeException runtimeException){
+            runtimeException.printStackTrace();
+            return ResponseEntity.badRequest().build();
+        }
 
     }
 }
