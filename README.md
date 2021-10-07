@@ -4,7 +4,7 @@ Link api utilizada
 https://viacep.com.br/
 
 
-Faça um clone deste projeto e deste hhttps://github.com/Ratkovski/poc-orangeConsumer para que ambos se comuniquem:
+Faça um clone deste projeto e deste https://github.com/Ratkovski/poc-orangeConsumer para que ambos se comuniquem:
 
 Esta aplicação tem por finalidade fazer uma consulta no viacep pegar as informações de determinado cep e publicá-las com o amazon sqs em filas de mensagens que armazenam mensagens esperando processamento.
 
